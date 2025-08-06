@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+function redirect() {
+  // Use a universal Google Maps link
+  window.location.href = "https://maps.google.com/?q=30.3517116,-95.5044837";
+}
+</script>
+</head>
+<body onload="redirect()">
+<p>Redirecting to your maps app...</p>
+</body>
+</html>
