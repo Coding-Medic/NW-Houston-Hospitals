@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redirecting to Map</title>
+  <script>
+    function redirect() {
+      var ua = navigator.userAgent.toLowerCase();
+      if (/iphone|ipad|ipod/.test(ua)) {
+        window.location.href = "https://maps.apple.com/?q=29.92552777777778,-95.63066666666666";
+      } else if (/android/.test(ua)) {
+        window.location.href = "https://maps.google.com/?q=29.92552777777778,-95.63066666666666";
+      } else {
+        window.location.href = "https://maps.google.com/?q=29.92552777777778,-95.63066666666666";
+      }
+    }
+  </script>
+</head>
+<body onload="redirect()">
+  <p>Redirecting to map for HCA North Cypress...</p>
+</body>
+</html>

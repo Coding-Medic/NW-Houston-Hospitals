@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redirecting to Map</title>
+  <script>
+    function redirect() {
+      var ua = navigator.userAgent.toLowerCase();
+      if (/iphone|ipad|ipod/.test(ua)) {
+        window.location.href = "https://maps.apple.com/?q=29.713670,-95.394027";
+      } else if (/android/.test(ua)) {
+        window.location.href = "https://maps.google.com/?q=29.713670,-95.394027";
+      } else {
+        window.location.href = "https://maps.google.com/?q=29.713670,-95.394027";
+      }
+    }
+  </script>
+</head>
+<body onload="redirect()">
+  <p>Redirecting to map for MH TMC Downtown...</p>
+</body>
+</html>
